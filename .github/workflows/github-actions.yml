@@ -5,7 +5,7 @@ on:
       - main
 env:
   PYTEST_REPORT_PATH: pytest_report.html
-  CODE_PATH: src/Library.py
+  CODE_PATH: src/Laba_2.py
 jobs:
   tests:
     runs-on: windows-10
