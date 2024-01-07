@@ -8,7 +8,7 @@ env:
   CODE_PATH: src/Library.py
 jobs:
   tests:
-    runs-on: macos-14.0
+    runs-on: windows-10
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -33,7 +33,7 @@ jobs:
           path: ${{ env.PYTEST_REPORT_PATH }}
   upload_artifact:
     needs: tests
-    runs-on: macos-14.0
+    runs-on: windows-10
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
