@@ -2,7 +2,7 @@ name: Python CI/CD
 on:
   push:
     branches:
-    -master
+      -master
 jobs:
   test-and-package:
     runs-on: ubuntu-latest
